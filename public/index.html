@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="client.js"></script>
+<body>
+<div id="container" class="container-fluid h-100">
+    <div id="container-top" class="row h-90">
+        <div id="message-container" class="col-sm-10">
+            <div id="user-banner" class="row">
+                <h6 id="banner">User banner</h6>
+            </div>
+            <div id="message-list" class="row border">
+                <ul id="messages"></ul>
+            </div>
+        </div>
+        <div id="users-container" class="col-sm-2">
+            <div id="online-banner" class="row">
+                <h6>Online users</h6>
+            </div>
+            <div id="user-list" class="row border">
+                <ul id="users"></ul>
+            </div>
+        </div>
+    </div>
+    <div id="container-bottom" class="row">
+        <div id="input-container" class="col fixed-bottom">
+            <form action="">
+                <input id="m" autocomplete="off" />
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
